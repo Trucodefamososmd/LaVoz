@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Noticias - La Voz Argentina</title>
+  <title>Equipos - La Voz Argentina</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
@@ -28,7 +28,7 @@
       text-shadow: 2px 2px 10px red;
     }
 
-    .news-container {
+    .team-container {
       background-color: rgba(0, 0, 0, 0.75);
       padding: 1.5rem;
       margin: 1.5rem auto;
@@ -37,21 +37,22 @@
       box-shadow: 0 0 15px red;
     }
 
-    .news-title {
-      font-size: 1.5rem;
+    .team-title {
+      font-size: 2rem;
       font-weight: bold;
       margin: 10px 0;
+      text-decoration: underline;
     }
 
-    .news-container img {
-      width: 50%;
-      margin-top: 10px;
-      border-radius: 8px;
-    }
-
-    .news-date {
+    .team-list {
+      font-size: 1.2rem;
       color: #ccc;
-      font-size: 1rem;
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .team-list li {
+      margin: 8px 0;
     }
 
     footer {
@@ -82,32 +83,36 @@
 </head>
 <body>
   <header>
-    <h1>La Voz Argentina - Noticias</h1>
-    <p>¡Mantente al tanto de lo último en La Voz!</p>
+    <h1>La Voz Argentina - Equipos</h1>
+    <p>¡Conoce a los equipos de La Voz Argentina!</p>
   </header>
 
-  <div class="news-container">
-    <div class="news-title">Lali y La Sole - Este Lunes 21/04 en NADIE DICE NADA por LUZU TV a las 10:00hs</div>
-    <img src="ndn.jpg" alt="Lali y La Sole">
-    <div class="news-date">Publicado el 19/04/2025</div>
+  <div class="team-container">
+    <div class="team-title">Team Lali</div>
+    <ul class="team-list">
+      <li>Aún no hay participantes</li>
+    </ul>
   </div>
 
-  <div class="news-container">
-    <div class="news-title">La Sole - 2 jurado confirmada para "La Voz"</div>
-    <img src="sole.jpeg" alt="La Sole">
-    <div class="news-date">Publicado el 19/04/2025</div>
+  <div class="team-container">
+    <div class="team-title">Team Sole</div>
+    <ul class="team-list">
+      <li>Aún no hay participantes</li>
+    </ul>
   </div>
 
-  <div class="news-container">
-    <div class="news-title">Lali - Primera jurado confirmado para "La Voz"</div>
-    <img src="lali.avif" alt="Lali">
-    <div class="news-date">Publicado el 19/04/2025</div>
+  <div class="team-container">
+    <div class="team-title">Team Luck Ra</div>
+    <ul class="team-list">
+      <li>Aún no hay participantes</li>
+    </ul>
   </div>
 
-  <div class="news-container">
-    <div class="news-title">Nico Occhiato - Nuevo conductor de "La Voz"</div>
-    <img src="nico.jpg" alt="Nico Occhiato">
-    <div class="news-date">Publicado el 25/03/2025</div>
+  <div class="team-container">
+    <div class="team-title">Team Miranda</div>
+    <ul class="team-list">
+      <li>Aún no hay participantes</li>
+    </ul>
   </div>
 
   <a href="index.html" class="back-btn">Volver al Inicio</a>
