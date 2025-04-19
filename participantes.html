@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>La Voz Argentina</title>
+  <title>Participantes - La Voz Argentina</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
@@ -18,7 +18,8 @@
     header {
       background-color: rgba(0, 0, 0, 0.85);
       padding: 2rem 1rem;
-      border-bottom: 4px solid red;
+      border-bottom: 4px solid #e60000;
+      box-shadow: 0 0 20px #ff0000;
     }
 
     header h1 {
@@ -28,55 +29,39 @@
       text-shadow: 2px 2px 10px red;
     }
 
-    nav {
-      margin: 2rem 0;
+    .formulario-container {
+      background-color: rgba(0, 0, 0, 0.75);
+      padding: 2rem;
+      margin: 3rem auto;
+      border-radius: 12px;
+      max-width: 800px;
+      box-shadow: 0 0 15px red;
     }
 
-    nav a {
+    iframe {
+      width: 100%;
+      height: 800px;
+      border: none;
+      border-radius: 12px;
+    }
+
+    .volver {
+      margin-top: 2rem;
+    }
+
+    .volver a {
       background-color: red;
       color: white;
       text-decoration: none;
-      padding: 1rem 2rem;
-      margin: 0.5rem;
+      padding: 0.8rem 1.5rem;
       border-radius: 8px;
       font-weight: bold;
-      font-size: 1.1rem;
+      font-size: 1rem;
       box-shadow: 0 4px 8px rgba(0,0,0,0.5);
       transition: background-color 0.3s, transform 0.2s;
     }
 
-    nav a:hover {
-      background-color: #cc0000;
-      transform: scale(1.05);
-    }
-
-    section {
-      background-color: rgba(0, 0, 0, 0.75);
-      padding: 2rem;
-      margin: 2rem auto;
-      max-width: 800px;
-      border-radius: 12px;
-      box-shadow: 0 0 15px red;
-    }
-
-    .audio-button {
-      margin-top: 2rem;
-    }
-
-    .audio-button button {
-      background-color: red;
-      color: white;
-      border: none;
-      padding: 1rem 2rem;
-      border-radius: 10px;
-      font-size: 1.1rem;
-      font-weight: bold;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-      cursor: pointer;
-      transition: background-color 0.3s, transform 0.2s;
-    }
-
-    .audio-button button:hover {
+    .volver a:hover {
       background-color: #cc0000;
       transform: scale(1.05);
     }
@@ -85,33 +70,22 @@
       background-color: rgba(0, 0, 0, 0.85);
       padding: 1rem;
       font-size: 0.9rem;
-      border-top: 4px solid red;
+      border-top: 4px solid #e60000;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>La Voz Argentina</h1>
-    <p>¡El show musical más esperado del país!</p>
+    <h1>Participantes</h1>
   </header>
 
-  <nav>
-    <a href="jurados.html">Jurados</a>
-    <a href="participantes.html">Participantes</a>
-    <a href="etapas.html">Etapas</a>
-    <a href="noticias.html">Noticias</a>
-  </nav>
+  <div class="formulario-container">
+    <iframe src="https://forms.gle/tWWoXusKG8yst6wq5" allowfullscreen></iframe>
+  </div>
 
-  <section>
-    <h2>Conducido por Nico Occhiato</h2>
-    <p>Vuelve La Voz Argentina con un nuevo conductor, nuevos talentos y el jurado más explosivo del país: Lali, La Sole, Luck Ra y Miranda.</p>
-
-    <div class="audio-button">
-      <h3 style="margin-bottom: 1rem; color: #ffcccc; text-shadow: 1px 1px 5px red;">🎶 ¡Sorpresa musical!</h3>
-      <button onclick="document.getElementById('audio').play()">Reproducir sorpresa</button>
-      <audio id="audio" src="cancion.mp3"></audio>
-    </div>
-  </section>
+  <div class="volver">
+    <a href="index.html">Volver al inicio</a>
+  </div>
 
   <footer>
     &copy; 2025 La Voz Argentina | Pronto por Telefe
