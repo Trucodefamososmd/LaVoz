@@ -28,6 +28,33 @@
       text-shadow: 2px 2px 10px red;
     }
 
+    #cuenta-regresiva {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 1.5rem;
+    }
+
+    #cuenta-regresiva div {
+      background-color: #1a1a1a;
+      padding: 1rem;
+      border-radius: 10px;
+      width: 80px;
+      box-shadow: 0 0 10px red;
+    }
+
+    #cuenta-regresiva h2 {
+      font-size: 2rem;
+      margin: 0;
+      color: #ff4d4d;
+    }
+
+    #cuenta-regresiva p {
+      margin: 0;
+      font-size: 0.9rem;
+      color: #ccc;
+    }
+
     nav {
       display: flex;
       flex-wrap: wrap;
@@ -126,6 +153,23 @@
       .audio-button button {
         width: 100%;
       }
+
+      #cuenta-regresiva {
+        gap: 1rem;
+      }
+
+      #cuenta-regresiva div {
+        width: 60px;
+        padding: 0.8rem;
+      }
+
+      #cuenta-regresiva h2 {
+        font-size: 1.5rem;
+      }
+
+      #cuenta-regresiva p {
+        font-size: 0.75rem;
+      }
     }
   </style>
 </head>
@@ -133,6 +177,25 @@
   <header>
     <h1>La Voz Argentina</h1>
     <p>¡El show musical más esperado del país!</p>
+
+    <div id="cuenta-regresiva">
+      <div>
+        <h2>?</h2>
+        <p>días</p>
+      </div>
+      <div>
+        <h2>?</h2>
+        <p>horas</p>
+      </div>
+      <div>
+        <h2>?</h2>
+        <p>minutos</p>
+      </div>
+      <div>
+        <h2>?</h2>
+        <p>segundos</p>
+      </div>
+    </div>
   </header>
 
   <nav>
